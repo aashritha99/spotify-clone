@@ -10,7 +10,7 @@ body{
     height:80vh;
     width:300px;
     border:2px;
-    background-color: #111010;
+    background-color: #8b1f1f;
     border-radius: 20px; 
 }
 .side-bar.collapse{
@@ -19,6 +19,8 @@ body{
 }
 .side-bar-options{
     color:white;
+    display:flex;
+    flex-direction: column;
    
 }
 .top-navbar{
@@ -48,9 +50,6 @@ button{
   background: none;
     border: none;
 }
-.toggle-button{
- margin:10px;
-}
 .google-icon {
   color: #ffffff;
   font-size:30px;
@@ -62,7 +61,15 @@ button{
     font-size: 24px;
     margin-left: 20px;
     margin-top: 20px;
-    display:inline-block;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+
+}
+.collapse .side-heading{
+   flex-wrap: wrap;
 }
 .create-btn{
     background-color: #000000;
@@ -72,6 +79,31 @@ height:30px;
 border-radius: 20px;
 align-items: center;
 justify-content: center;
+margin:10px;
+}
+.collapse .create-btn{
+    display:none;
+}
 
+.create-btn:hover{
+    background-color: #232323;
+    cursor: pointer;
+}
+.library{
+    color:white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+.side-bar.collapse .library{
+    display:none;
+}
+.option-item{
+    height:40px;
+    display:flex;
+    background-color: black;
+    margin:4px;
+    border-radius: 10px;
 }
 
