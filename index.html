@@ -10,28 +10,29 @@
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <script src="https://kit.fontawesome.com/b5c8b43017.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="icon" href="./assets/logo.png"/>
+    <title>Spotify</title>
   </head>
   <body>
     <div class="top-navbar">
       <img src="./assets/Spotify.svg" alt="Spotify Logo" class="logo" /> 
       <div class="house-icon">
-        <i class="fa-solid fa-house" style="color: #ffffff;" class="home-icon"></i>
+        <i class="fa-solid fa-house icon" style="color: #ffffff ;" class="home-icon"></i>
       </div>
       <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass search-icon" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-magnifying-glass search-icon icon" style="color: #ffffff;"></i>
         <input
           type="text"
           class="search-input"
           placeholder="Search for Artists, Songs, or Podcasts"
         />
         <div class="line"></div>
-        <i class="fa-solid fa-folder-open folder" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-folder-open folder icon" style="color: #ffffff;"></i>
       </div>
       <div class="nav-icons">
-      <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-users" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>
+      <i class="fa-regular fa-bell icon" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-users icon" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-circle-user icon" style="color: #ffffff;"></i>
       </div>
     </div>
     <div class="container">
@@ -57,7 +58,35 @@
       </div>
       <div class="main-content"></div>
     </div>
-    <div class="bottom-player"></div>
+    <div class="bottom-player">
+      <div class="music">
+        <a href="https://open.spotify.com/album/5fy0X0JmZRZnVa2UEicIOl?highlight=spotify:track:3fVnlF4pGqWI9flVENcT28"> <img src="./assets/1.jpg" alt="Album Art" class="album-art" /></a>
+        <div class="music-info">
+        <div class="song-title">Blank Space</div>
+        <div class="artist-name">Taylor Swift</div>
+        </div>
+        <div class="addicon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+      </div>
+     <div class="player">
+       <div class="player-controls">
+        <i class="fa-solid fa-shuffle light-player" style="color: gray;"></i>
+        <i class="fa-solid fa-backward" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-forward" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-repeat light-player" style="color: gray;"></i></div> 
+        <div class="progress-bar">
+          <span class="current-time time">1:15</span>
+          <div class="bar">
+            <div class="progress">
+              <div class="progress-filled"></div>
+            </div>
+          </div>
+          <span class="total-time time">3:45</span>
+        </div>
+     </div>
+      <div class="controls">
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
